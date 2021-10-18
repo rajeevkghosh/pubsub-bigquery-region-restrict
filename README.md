@@ -1,2 +1,2 @@
-# pubsub-bigquery-region-restrict
-restricting pubsub and bigquery-region
+# policy-pubsub-region
+enforcing sentinel policy based on  region
