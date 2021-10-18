@@ -43,8 +43,17 @@ planned_values = {
 			"values": {
 				"kms_key_name": null,
 				"labels":       null,
-				"name":         "example-topic",
-				"timeouts":     null,
+				"message_storage_policy": [
+					{
+						"allowed_persistence_regions": [
+							"us-central1",
+							"us-east-1",
+							"us-west-1",
+						],
+					},
+				],
+				"name":     "example-topic",
+				"timeouts": null,
 			},
 		},
 	},
@@ -75,7 +84,7 @@ resource_changes = {
 				"labels": {
 					"env": "default",
 				},
-				"location": "US",
+				"location": "us-central1",
 				"timeouts": null,
 			},
 			"after_unknown": {
@@ -108,14 +117,31 @@ resource_changes = {
 			"after": {
 				"kms_key_name": null,
 				"labels":       null,
-				"name":         "example-topic",
-				"timeouts":     null,
+				"message_storage_policy": [
+					{
+						"allowed_persistence_regions": [
+							"asia-east1",
+							"us-east-1",
+							"us-west-1",
+						],
+					},
+				],
+				"name":     "example-topic",
+				"timeouts": null,
 			},
 			"after_unknown": {
 				"id": true,
-				"message_storage_policy": true,
-				"project":                true,
-				"schema_settings":        true,
+				"message_storage_policy": [
+					{
+						"allowed_persistence_regions": [
+							false,
+							false,
+							false,
+						],
+					},
+				],
+				"project":         true,
+				"schema_settings": true,
 			},
 			"before": null,
 		},
@@ -180,6 +206,17 @@ raw = {
 				{
 					"address": "google_pubsub_topic.example",
 					"expressions": {
+						"message_storage_policy": [
+							{
+								"allowed_persistence_regions": {
+									"constant_value": [
+										"us-central1",
+										"us-east-1",
+										"us-west-1",
+									],
+								},
+							},
+						],
 						"name": {
 							"constant_value": "example-topic",
 						},
@@ -237,15 +274,32 @@ raw = {
 					"provider_name":  "registry.terraform.io/hashicorp/google",
 					"schema_version": 0,
 					"sensitive_values": {
-						"message_storage_policy": [],
-						"schema_settings":        [],
+						"message_storage_policy": [
+							{
+								"allowed_persistence_regions": [
+									false,
+									false,
+									false,
+								],
+							},
+						],
+						"schema_settings": [],
 					},
 					"type": "google_pubsub_topic",
 					"values": {
 						"kms_key_name": null,
 						"labels":       null,
-						"name":         "example-topic",
-						"timeouts":     null,
+						"message_storage_policy": [
+							{
+								"allowed_persistence_regions": [
+									"us-central1",
+									"us-east-1",
+									"us-west-1",
+								],
+							},
+						],
+						"name":     "example-topic",
+						"timeouts": null,
 					},
 				},
 			],
@@ -305,18 +359,43 @@ raw = {
 				"after": {
 					"kms_key_name": null,
 					"labels":       null,
-					"name":         "example-topic",
-					"timeouts":     null,
+					"message_storage_policy": [
+						{
+							"allowed_persistence_regions": [
+								"us-central1",
+								"us-east-1",
+								"us-west-1",
+							],
+						},
+					],
+					"name":     "example-topic",
+					"timeouts": null,
 				},
 				"after_sensitive": {
-					"message_storage_policy": [],
-					"schema_settings":        [],
+					"message_storage_policy": [
+						{
+							"allowed_persistence_regions": [
+								false,
+								false,
+								false,
+							],
+						},
+					],
+					"schema_settings": [],
 				},
 				"after_unknown": {
 					"id": true,
-					"message_storage_policy": true,
-					"project":                true,
-					"schema_settings":        true,
+					"message_storage_policy": [
+						{
+							"allowed_persistence_regions": [
+								false,
+								false,
+								false,
+							],
+						},
+					],
+					"project":         true,
+					"schema_settings": true,
 				},
 				"before":           null,
 				"before_sensitive": false,
