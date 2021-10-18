@@ -1,0 +1,40 @@
+{
+	"records": [
+		{
+			"key": "test/network_gcp_region_restricition/pubsub-location-check-pass/tfplan-functions",
+			"source": "../../tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/rajeevghosh/wells-18OCT/pubsub-bigquery-region-restrict/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/network_gcp_region_restricition/bigquery-location-check-fail/tfplan-functions",
+			"source": "../../tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/rajeevghosh/wells-18OCT/pubsub-bigquery-region-restrict/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/network_gcp_region_restricition/pubsub-location-check-null/tfplan-functions",
+			"source": "../../tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/rajeevghosh/wells-18OCT/pubsub-bigquery-region-restrict/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/network_gcp_region_restricition/bigquery-location-check-null/tfplan-functions",
+			"source": "../../tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/rajeevghosh/wells-18OCT/pubsub-bigquery-region-restrict/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/network_gcp_region_restricition/bigquery-location-check-pass/tfplan-functions",
+			"source": "../../tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/rajeevghosh/wells-18OCT/pubsub-bigquery-region-restrict/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/network_gcp_region_restricition/pubsub-location-check-fail/tfplan-functions",
+			"source": "../../tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/rajeevghosh/wells-18OCT/pubsub-bigquery-region-restrict/tfplan-functions.sentinel"
+		}
+	]
+}

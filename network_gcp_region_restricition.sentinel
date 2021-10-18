@@ -11,7 +11,7 @@ import "strings"
 import "types"
 
 prefix = "us-"
-prefix_bq = "us-"
+bq_multi_region = "US"
 
 # Get all Pubsub Topics
 allTopics = plan.find_resources("google_pubsub_topic")
@@ -73,7 +73,7 @@ for all_BQ_Resources as address, rc {
 
 	} else {
 
-		if bigquery_location == "US" or strings.has_prefix(bigquery_location, prefix_bq) {
+		if bigquery_location == bq_multi_region or strings.has_prefix(bigquery_location, prefix) {
 
 		} else {
 
